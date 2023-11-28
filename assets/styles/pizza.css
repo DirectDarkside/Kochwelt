@@ -60,7 +60,6 @@
 
 .category-section span:hover {
     background-color: rgb(240, 240, 240, 0.5);
-    cursor: pointer;
 }
 
 .category-img {
@@ -132,6 +131,10 @@ form button {
  padding-right: 24px;
 }
 
+.creator-headline {
+    text-align: start;
+}
+
 .creator-container {
     display: flex;
     align-items: center;
@@ -142,6 +145,13 @@ form button {
     width: 64px;
     height: 64px;
     border-radius: 40px;
+}
+
+@media(max-width: 1300px) {
+    
+    section {
+        padding-left: 8px;
+    }
 }
 
 @media(max-width: 470px) {
