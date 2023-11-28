@@ -31,8 +31,13 @@ nav {
 }
 
 .nav-link {
-    text-decoration: none;
+    text-decoration: underline;
     color: black;
+    transition: 100ms linear;
+    text-decoration-color: transparent;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 5px;
+
 }
 
 .nav-link:hover {
