@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kochwelt</title>
+    <link rel="stylesheet" href="./assets/styles/homepage.css" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="icon" href="./assets/img/logo_small.png" type="image/" />
+    <link rel="stylesheet" href="./assets/templates/header/header.css" />
+    <link rel="stylesheet" href="./assets/templates/footer/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="./main.js"></script>
+  </head>
+  <body onload="includeHTML()">
+    <div
+      w3-include-html="./assets/templates/header/header.html"
+      class="header"
+    ></div>
+
+    <section class="atf">
+      <div class="left-container">
+        <img class="main-img" src="./assets/img/salad.jpg" alt="Salat Bild" />
+      </div>
+
+      <div class="right-container">
+        <h1>Griechischer Bauernsalat</h1>
+        <div class="desc">
+          Tauche ein in die Aromen der mediterranen Küche mit unserem
+          authentischen griechischen Bauernsalat! <br />
+          Frische Tomaten, knusprige Gurken, würziger Feta-Käse und herzhafte
+          Kalamata-Oliven verbinden sich in diesem traditionellen Rezept zu
+          einem Fest für die Sinne. <br />
+          Unser Salat wird mit einem Hauch von Oregano gewürzt und von einem
+          köstlichen Dressing aus extra nativem Olivenöl und Rotweinessig
+          perfekt abgerundet. <br />
+          Leicht zuzubereiten und voller Geschmack - entdecke die Sonne
+          Griechenlands in jedem Bissen!
+        </div>
+        <a class="btn" href="./recipe-of-the-day.html">Rezept öffnen</a>
+      </div>
+    </section>
+
+    <section class="section1">
+      <div><h2>Lust auf was Neues?</h2></div>
+      <div class="recipes">
+        <div class="recipe-txt">
+          <a href="./pizza.html">
+            <img
+              class="recipe-img"
+              src="./assets/img/pizza.jpg"
+              alt="Rezept Foto" /></a
+          >Pizza
+        </div>
+        <div class="recipe-txt">
+          <a href="./muesli.html">
+            <img
+              class="recipe-img"
+              src="./assets/img/muesli.jpg"
+              alt="Rezept Foto" /></a
+          >Bircher Müsli
+        </div>
+        <div class="recipe-txt">
+          <a href="./baked-potato.html">
+            <img
+              class="recipe-img"
+              src="./assets/img/baked-potato.jpg"
+              alt="Rezept Foto"
+            /> </a
+          >Ofenkartoffel
+        </div>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div><h2>Pfanne vs. Wok - Was ist besser?</h2></div>
+
+      <div class="info">
+        <span class="left-cont2"
+          ><p class="info-text">
+            Pfanne oder Wok? Die Pfanne ist vielseitig und einfach, gut für
+            Saucen und Eierspeisen. <br />
+            Der Wok eignet sich für schnelles Anbraten, ideal für die asiatische
+            Küche. <br />
+            Pfanne ist allgemein, Wok spezialisiert sich auf Rühren und hohe
+            Hitze. <br />
+            Deine Wahl hängt von deinen Kochvorlieben ab: Pfanne für
+            Vielseitigkeit, Wok für asiatische Gerichte. <br /></p
+        ></span>
+        <div class="right-con2">
+          <img class="info-img" src="./assets/img/wok.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <div
+      w3-include-html="./assets/templates/footer/footer.html"
+      class="footer"
+    ></div>
+  </body>
+</html>

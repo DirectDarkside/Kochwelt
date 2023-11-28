@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza</title>
+    <link rel="icon" href="./assets/img/logo_small.png" type="image/" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link rel="stylesheet" href="./assets/templates/header/header.css" />
+    <link rel="stylesheet" href="./assets/templates/footer/footer.css" />
+    <link rel="stylesheet" href="./assets/styles/pizza.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./main.js"></script>
+  </head>
+  <body onload="includeHTML()">
+    <div
+      w3-include-html="./assets/templates/header/header.html"
+      class="header"
+    ></div>
+
+    <div class="container">
+      <h1>Pizza</h1>
+
+      <div class="pizza-img"></div>
+
+      <section class="category-section">
+        <span
+          ><img
+            src="./assets/img/icons/clock-regular.svg"
+            alt="clock icon"
+            class="category-img"
+          />48 Stunden</span
+        >
+        <span
+          ><img
+            src="./assets/img/icons/brain-solid.svg"
+            alt="brain icon"
+            class="category-img"
+          />simpel</span
+        >
+        <span
+          ><img
+            src="./assets/img/icons/calendar-alt-regular.svg"
+            alt="calendar icon"
+            class="category-img"
+          />14.04.2023</span
+        >
+      </section>
+
+      <div class="br"></div>
+
+      <section class="ingredients-section">
+        <form>
+          <label for="amount">Zutaten für </label>
+          <input id="amount" type="number" value="3" />
+          <button type="submit">Portionen</button>
+        </form>
+      </section>
+
+      <section>
+        <table class="ingredients-table">
+          <tbody>
+            <tr>
+              <td>500</td>
+              <td>g Weizenmehl Typ 00</td>
+            </tr>
+            <tr>
+              <td>325</td>
+              <td>ml kaltes Wasser</td>
+            </tr>
+            <tr>
+              <td>15</td>
+              <td>g feines Meersalz</td>
+            </tr>
+            <tr>
+              <td>1,5</td>
+              <td>g frische Hefe</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="preparation-section">
+        <h2>Zubereitung</h2>
+        <div class="category-section">
+          <span
+            ><img
+              src="./assets/img/icons/clock-regular.svg"
+              alt="clock icon"
+              class="category-img"
+            />ca. 48 Stunden</span
+          >
+          <span
+            ><img
+              src="./assets/img/icons/clock-regular.svg"
+              alt="clock icon"
+              class="category-img"
+            />Gesamtzeit ca. 48 Stunden</span
+          >
+        </div>
+
+        <p>
+          Herstellung: Beginne mit einer Autolyse. Dazu ca. 90% der gesamten
+          Wassermenge zum Mehl geben und grob <br />
+          miteinander vermengen. Anschließend ca. 30 Min. abgedeckt stehen
+          lassen. <br />
+          Nach dieser Zeit löst du die frische Hefe im restlichen Wasser auf und
+          gibst das <br />
+          Gemisch zur Autolyse hinzu. Beginne mit dem kneten. <br />
+          Sobald der Teig das Wasser gebunden hat, darfst Du das feine Meersalz
+          hinzufügen und <br />
+          15-20 Minuten weiter kneten bis der Teig geschmeidig ist. <br />
+          <br />
+          Schleife den Teig zu einer Kugel. Nun muss er 24 Std. luftdicht im
+          Kühlschrank ruhen. <br />
+          Am nächsten Tag teilst Du den Teig auf drei Teiglinge zu je 280g und
+          formst sie rund. <br />
+          Nun dürfen die Teiglinge nochmal 20 Stunden im Kühlschrank abgedeckt
+          reifen. <br />
+          <br />
+          Vier Stunden vor dem Pizzabacken darfst Du die Teiglinge aus dem
+          Kühlschrank holen, <br />
+          damit sie akklimatisieren und nochmal schön aufgehen. <br />
+          Anschließend die Luft in den Rand drücken, die Pizza auseinander
+          ziehen, mit deinen <br />
+          Lieblingstoppings belegen und backen <br />
+        </p>
+      </section>
+
+      <section>
+        <h3>Rezept erstellt von</h3>
+        <div class="creator-container">
+          <img
+            class="profile-img"
+            src="./assets/img/profile.png"
+            alt="Profile Image"
+          />
+          <span>Daniel S.</span>
+        </div>
+      </section>
+    </div>
+
+    <div
+      w3-include-html="./assets/templates/footer/footer.html"
+      class="footer"
+    ></div>
+  </body>
+</html>

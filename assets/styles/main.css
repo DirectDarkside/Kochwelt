@@ -1,0 +1,25 @@
+:root {
+  --Grün: #008000;
+  --Hellgrau: #efefef;
+  --Footer: #403b3b;
+  --Schwarz: #000000;
+  --Weiß: #ffffff;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 18px;
+  margin: 0;
+}
+
+
+.header {
+  width: 100%;
+}
+
+.footer {
+  width: 100%;
+}

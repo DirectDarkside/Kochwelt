@@ -1,0 +1,10 @@
+#imprint-link {
+    color: #008000;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 5px;
+}
+
+.imprint-container {
+    padding: 80px;
+}

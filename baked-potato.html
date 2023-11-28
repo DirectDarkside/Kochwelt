@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ofenkartoffel</title>
+    <link rel="icon" href="./assets/img/logo_small.png" type="image/" />
+    <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/templates/header/header.css">
+    <link rel="stylesheet" href="./assets/templates/footer/footer.css">
+    <link rel="stylesheet" href="./assets/styles/baked-potato.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="./main.js"></script>
+</head>
+<body onload="includeHTML()">
+
+    <div w3-include-html="./assets/templates/header/header.html" class="header"></div>
+
+    <div class="container">
+        
+        <h1>Ofenkartoffeln </h1>
+
+        <div class="baked-potato-img"></div>
+
+        <section class="category-section">
+            <span><img src="./assets/img/icons/clock-regular.svg" alt="clock icon" class="category-img">5 Min.</span>
+            <span><img src="./assets/img/icons/brain-solid.svg" alt="brain icon" class="category-img">simpel</span>
+            <span><img src="./assets/img/icons/calendar-alt-regular.svg" alt="calendar icon" class="category-img">22.10.2018</span>
+        </section>
+
+        <div class="br"></div>
+        
+
+        <section class="ingredients-section">
+
+            <form>
+                <label for="amount">Zutaten für </label>
+                <input id="amount" type="number" value="4">
+                <button type="submit">Portionen</button>
+                
+            </form>
+
+        </section>
+
+        <section>
+            <table class="ingredients-table">
+                <tbody>
+                    <tr>
+                        <td>800</td>
+                        <td>g Kartoffel(n)</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>EL Öl, neutrales oder Olivenöl</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>EL Rosmarin</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>TL Meersalz, grobes, etwas gemahlen</td>
+                    </tr>
+                    <tr>
+                        <td>n.B.</td>
+                        <td>Knoblauchzehe(n), gepresst</td>
+                    </tr>
+                    <tr>
+                        <td>n.B.</td>
+                        <td>Chili oder Pfeffer</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+        </section>
+
+        <section class="preparation-section">
+            <h2>Zubereitung</h2>
+            <div class="category-section">
+                <span><img src="./assets/img/icons/clock-regular.svg" alt="clock icon" class="category-img">ca. 5 Minuten</span>
+                <span><img src="./assets/img/icons/clock-regular.svg" alt="clock icon" class="category-img">Gesamtzeit ca. 5 Minuten</span>
+            </div>
+
+            <p>
+                Die Kartoffeln müssen nicht geschält werden (falls erforderlich), dann trocken tupfen und längs halbieren. Dadurch sollten schöne, längliche Viertel entstehen.
+                <br>
+                <br>
+                Die Rosmarinnadeln fein hacken und in einer Schüssel mit den Kartoffeln, Öl, Salz, anderen Gewürzen und dem durchgepressten Knoblauch gut vermengen. Die Mischung auf einem mit Backpapier ausgelegten Rost platzieren.
+                <br>
+                <br>
+                Die Kartoffeln etwa 20 Minuten lang bei 200 °C Ober-/Unterhitze im vorgeheizten Ofen garen. Anschließend nochmals 5 Minuten bei 250 °C Oberhitze oder - falls vorhanden - unter dem Grill bräunen. Die Garzeit variiert natürlich je nach Größe und Dicke der Viertel und dient hier nur als grobe Richtlinie.
+                <br>
+                <br>
+                Tipp: Für diejenigen, die mögen, besteht die Möglichkeit, kurz vor Ende der Garzeit (ungefähr die letzten 5 Minuten) etwas Parmesan darüber zu hobeln.
+                <br>
+                <br>
+                Übrigens: Es ist auch möglich, auf Knoblauch zu verzichten. Wenn man ihn nicht mag oder meiden möchte, schmecken die Kartoffeln auch ohne ihn durchaus gut.
+            </p>
+        </section>
+
+        <section>
+            <h3>Rezept erstellt von</h3>
+            <div class="creator-container">
+                <img class="profile-img" src="./assets/img/profile.png" alt="Profile Image">
+                <span>Florian</span>
+            </div>
+        </section>
+    </div>
+
+    <div w3-include-html="./assets/templates/footer/footer.html" class="footer"></div>
+    
+</body>
+</html>
