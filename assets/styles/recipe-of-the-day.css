@@ -85,16 +85,16 @@
     /* width: 100%; */
 }
 
-form {
+#ingredients-container {
     display: flex;
     align-items: center;
 }
 
-form label {
+#ingredients-label {
     color: rgb(0, 0, 0, 0.7);
 }
 
-form input {
+#amount {
     border-width: 1px;
     border-color: #efefef;
     border-radius: 4px 0px 0px 4px;
@@ -102,7 +102,7 @@ form input {
     margin-left: 8px;
 }
 
-form button {
+#ingredients-button {
     margin: 0;
     text-decoration: none;
     border: 0;

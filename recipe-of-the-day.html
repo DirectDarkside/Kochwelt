@@ -35,18 +35,18 @@
 
         <section class="ingredients-section">
 
-            <form>
-                <label for="amount">Zutaten für </label>
+            <div id="ingredients-container">
+                <label for="amount" id="ingredients-label">Zutaten für </label>
                 <input id="amount" type="number" value="4">
-                <button type="submit">Portionen</button>
+                <button id="ingredients-button" onclick="calc()">Portionen</button>
                 
-            </form>
+            </div>
 
         </section>
 
         <section>
             <table class="ingredients-table">
-                <tbody>
+                <tbody id="ingredients-body">
                     <tr>
                         <td>1</td>
                         <td>Saltgurke (n)</td>

@@ -1,3 +1,74 @@
+const ingredients = [
+  {
+    amount: 1,
+    name: 'Saltgurke (n)'
+  },
+  {
+    amount: 2,
+    name: 'Paprikaschot(n), rot und grün'
+  },
+  {
+    amount: 500,
+    name: 'g Tomate (n)'
+  },
+  {
+    amount: 2,
+    name: 'Zwiebel(n)'
+  },
+  {
+    amount: 200,
+    name: 'g Schafskäse'
+  },
+  {
+    amount: 'Eine Prise',
+    name: 'Salz und Pfeffer'
+  },
+  {
+    amount: 1,
+    name: 'Zitrone'
+  },
+  {
+    amount: 125,
+    name: 'ml Olivenöl'
+  },
+  {
+    amount: 'Ein Prise',
+    name: 'Oregano'
+  }
+];
+
+
+function calc() {
+  amountInput = +document.getElementById('amount').value;
+  if(amountInput > 0) {
+    calcIngredients(amountInput);
+  } else {
+    alert("Bitte tragen Sie nur Zahlen ein die höher sind als 0")
+  }
+}
+
+
+function calcIngredients(amount) {
+  const ingredientsBody = document.getElementById('ingredients-body');
+  ingredientsBody.innerHTML = '';
+
+  for(let i = 0; i < ingredients.length; i++) {
+    let result;
+    if(isNaN(ingredients[i].amount)) {
+      result = 'Eine Prise';
+    } else {
+      result = ingredients[i].amount / 4 * amount;
+    }
+
+    ingredientsBody.innerHTML += `
+      <tr>
+        <td>${result}</td>
+        <td>${ingredients[i].name}</td>
+      </tr>
+  `;
+  }
+}
+
 
 function includeHTML() {
   var z, i, elmnt, file, xhttp;
@@ -34,11 +105,13 @@ function openMenu(){
   document.getElementById('nav').classList.add('d-flex');
 }
 
+
 function closeMenu(){
   document.getElementById('hamburger-field').classList.add('d-none');
   document.getElementById('hamburger-icon').classList.remove('d-none');
   document.getElementById('nav').classList.remove('d-flex');
 }
+
 
 function sendMail(event){﻿
   event.preventDefault();
